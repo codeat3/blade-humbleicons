@@ -26,6 +26,6 @@ return [
         // with the pathname of the icon and the settings from above...
         'after' => $svgNormalization,
 
-        'is-solid' => true,
+        'is-solid' => false,
     ],
 ];
