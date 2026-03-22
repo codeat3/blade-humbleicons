@@ -12,7 +12,7 @@ use Codeat3\BladeHumbleicons\BladeHumbleiconsServiceProvider;
 class CompilesIconsTest extends TestCase
 {
     /** @test */
-    public function it_compiles_a_single_anonymous_component()
+    public function test_it_compiles_a_single_anonymous_component()
     {
         $result = svg('humble-aid')->toHtml();
 
@@ -25,7 +25,7 @@ class CompilesIconsTest extends TestCase
     }
 
     /** @test */
-    public function it_can_add_classes_to_icons()
+    public function test_it_can_add_classes_to_icons()
     {
         $result = svg('humble-aid', 'w-6 h-6 text-gray-500')->toHtml();
 
@@ -37,7 +37,7 @@ class CompilesIconsTest extends TestCase
     }
 
     /** @test */
-    public function it_can_add_styles_to_icons()
+    public function test_it_can_add_styles_to_icons()
     {
         $result = svg('humble-aid', ['style' => 'color: #555'])->toHtml();
 
@@ -49,7 +49,7 @@ class CompilesIconsTest extends TestCase
     }
 
     /** @test */
-    public function it_can_add_default_class_from_config()
+    public function test_it_can_add_default_class_from_config()
     {
         Config::set('blade-humbleicons.class', 'awesome');
 
@@ -63,7 +63,7 @@ class CompilesIconsTest extends TestCase
     }
 
     /** @test */
-    public function it_can_merge_default_class_from_config()
+    public function test_it_can_merge_default_class_from_config()
     {
         Config::set('blade-humbleicons.class', 'awesome');
 
